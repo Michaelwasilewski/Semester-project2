@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auction Cloud</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet" />
+    <script type="module" src="/js/signin.js" defer></script>
+    <script type="module" src="main.js" defer></script>
+  </head>
+
+  <body class="bg-gray-800">
+    <div class="flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+      <div class="w-full max-w-md space-y-8">
+        <div>
+          <h1 class="mt-6 text-center text-3xl font-bold tracking-tight text-orange-300 pb-4">Auction Cloud</h1>
+          <h2 class="mt-6 text-center text-3xl font-bold tracking-tight text-orange-200">Sign in</h2>
+        </div>
+        <form class="mt-8 space-y-6" id="login-form">
+          <div id="form-inputs" class="-space-y-px rounded-md shadow-sm">
+            <div>
+              <label for="email-address" class="block py-2 text-orange-200">Email address</label>
+              <input
+                id="email-address"
+                name="email"
+                type="email"
+                class="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                placeholder="Email address"
+              />
+              <span id="emailError" class="hidden text-sm text-red-500">
+                Email is required</span>
+              <span id="emailErrorValid" class="hidden text-sm text-red-500">
+                Email is not valid. (stud.noroff.no | noroff.no)</span>
+            </div>
+            <div>
+              <label for="password" class="block py-2 text-orange-200">Password</label>
+              <input
+                id="password"
+                name="password"
+                type="password"
+                class="relative block w-full appearance-none rounded-none rounded-b-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                placeholder="Password"
+              />
+              <span id="passwordError" class="hidden text-sm text-red-500">
+                Password incorrect, try again</span>
+            </div>
+            <div>
+              <button
+                id="sign-up-btn"
+                type="submit"
+                class="group relative flex w-full justify-center rounded-md border border-transparent bg-orange-200 py-2 px-4 text-sm font-medium text-gray-600 hover:bg-orange-100 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+              >
+                <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+                  <!-- Heroicon name: mini/lock-closed -->
+                  <svg
+                    class="h-5 w-5 text-yellow-600 group-hover:text-yellow-500"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </span>
+                Log in
+              </button>
+            </div>
+            <div id="general-error" class="text-2xl py-3.5 text-red-500 text-center hidden"></div>
+          </div>
+        </form>
+        <p class="text-center my-6 p-6 border-t-2 text-orange-200">Don't have an account? Sign up</p>
+        <a href="./login.html">
+          <button
+            class="group relative flex w-full justify-center rounded-md border border-transparent bg-orange-300 py-2 px-4 text-sm font-medium text-gray-600 hover:bg-orange-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+          >
+            Sign up
+          </button>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
