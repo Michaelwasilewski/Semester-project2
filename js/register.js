@@ -95,7 +95,7 @@ loginForm.addEventListener('submit', function (event) {
         });
         const data = await response.json();
         if (response.ok) {
-          // location.replace('/home.html');
+          location.replace('/home.html');
         } else {
           generalErrorMsg.innerHTML = `Sorry ${data.message}`;
         }
