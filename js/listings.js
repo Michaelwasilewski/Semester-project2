@@ -1,5 +1,5 @@
-import { GET_LISTINGS_BY_ID_URL } from "./settings/api";
-import { getToken } from "./utils/storage";
+import { GET_LISTINGS_BY_ID_URL } from './settings/api';
+import { getToken } from './utils/storage';
 const listingContainer = document.querySelector('#listings-container');
 console.log(listingContainer);
 const generalError = document.querySelector('#general-error');

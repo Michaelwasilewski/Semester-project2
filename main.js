@@ -8,11 +8,3 @@ if (logOutBtn) {
     window.location.replace('/index.html');
   });
 }
-
-// const options = {method: 'GET'};
-
-// fetch('https://api.noroff.dev/api/v1/auction/listings', options)
-//   .then(response => response.json())
-//   .then(response => console.log(response))
-//   .catch(err => console.error(err));
-
