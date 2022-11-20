@@ -9,7 +9,6 @@
     "format": "npx prettier --write .",
     "check-format": "npx prettier --check ."
   },
-  "author": "Michael Wasilewski",
   "devDependencies": {
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.19",
