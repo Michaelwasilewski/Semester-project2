@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script type="module" src="/main.js"></script>
+  </head>
+  <body>
+    <body class="bg-gray-800">
+      <header>
+        <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900">
+          <div class="container flex flex-wrap justify-between items-center mx-auto">
+            <a href="./" class="flex items-center">
+              <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-orange-300"
+                >Auction Cloud</span
+              >
+            </a>
+            <span id="user-greeting" class="text-white italic"></span>
+            <div class="md:block md:w-auto" id="navbar-default">
+              <ul
+                class="flex flex-col items-center p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+              >
+                <li>
+                  <a
+                    href="./home.html"
+                    class="class=block py-2 pr-4 pl-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:hover:bg-gray-700 md:dark:hover:bg-transparent text-orange-200"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./create-bid.html"
+                    class="class=block py-2 pr-4 pl-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:hover:bg-gray-700 md:dark:hover:bg-transparent text-orange-200"
+                    >Create bid</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./user-bids.html"
+                    class="block py-2 pr-4 pl-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:hover:bg-gray-700 md:dark:hover:bg-transparent text-orange-200"
+                    >My bids</a
+                  >
+                </li>
+                <li>
+                  <button
+                    id="log-out"
+                    class="block py-2 pr-4 pl-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:hover:bg-gray-700 md:dark:hover:bg-transparent text-orange-200"
+                  >
+                    Log out
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main class="bg-gray-800">
+        <div class="w-full bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+          <div class="flex justify-end px-4 pt-4"></div>
+          <div class="flex flex-col items-center pb-10">
+            <h5 class="mb-1 text-xl font-medium text-orange-900 dark:text-orange-300">Username</h5>
+            <div class="overflow-hidden relative w-10 h-10 bg-gray-100 rounded-full dark:bg-gray-600">
+              <svg
+                class="absolute -left-1 w-12 h-12 text-gray-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+            <span class="text-sm text-gray-500 dark:text-orange-200">Auction seller</span>
+            <span class="text-sm text-gray-500 dark:text-orange-200">Creadits: </span>
+            <div class="flex mt-4 space-x-3 md:mt-6">
+              <a
+                href="#"
+                class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-gray-600 bg-orange-300 rounded-lg hover:bg-orange-200 focus:ring-4 focus:outline-none focus:ring-orange-400 dark:bg-orange-300 dark:hover:bg-orange-200 dark:focus:ring-orange-300"
+                >Add friend</a
+              >
+              <a
+                href="#"
+                class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-gray-600 bg-orange-300 rounded-lg hover:bg-orange-200 focus:ring-4 focus:outline-none focus:ring-orange-400 dark:bg-orange-500 dark:hover:bg-orange-400 dark:focus:ring-orange-400"
+                >Message</a
+              >
+            </div>
+          </div>
+        </div>
+      </main>
+    </body>
+  </body>
+</html>
