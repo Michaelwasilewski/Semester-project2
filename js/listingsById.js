@@ -5,7 +5,7 @@ const paramString = window.location.search;
 const searchParam = new URLSearchParams(paramString);
 const listingId = searchParam.get('listings_id');
 const accessToken = getToken();
-const listingDetails = document.querySelector('#listings-container');
+const listingDetails = document.querySelector('#listing-container');
 
 async function getListingsById() {
   const response = await fetch(`${GET_LISTINGS_BY_ID_URL}/${listingId}`, {
