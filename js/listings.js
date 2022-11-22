@@ -1,4 +1,4 @@
-import { GET_LISTINGS_BY_ID_URL } from './settings/api';
+import { GET_LISTINGS_BY_ID_SELLER_URL } from './settings/api';
 import { getToken } from './utils/storage';
 const listingContainer = document.querySelector('#listings-container');
 console.log(listingContainer);
@@ -7,7 +7,7 @@ console.log(generalError);
 const accessToken = getToken();
 
 (async function getAllListings() {
-  const response = await fetch(GET_LISTINGS_BY_ID_URL, {
+  const response = await fetch(GET_LISTINGS_BY_ID_SELLER_URL, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
@@ -52,6 +52,10 @@ const accessToken = getToken();
               ${listingEndsAt}
               </span>
               </div>
+        <div class="flex">
+            <label for="bid" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">$</label>
+            <input type="number" id="bidding-label" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Max 1000" required>
+        </div>
             </div>
         `;
         })

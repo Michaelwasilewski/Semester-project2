@@ -1,7 +1,6 @@
 const tokenKey = 'token';
 const userKey = 'user';
-const creditKey = "credits";
-
+const creditKey = 'credits';
 
 function saveToken(token) {
   console.log('token: ', token);
@@ -37,9 +36,9 @@ function saveCredit(credits) {
 function getCreditAmount() {
   const availableCredit = getFromStorage(creditKey);
   if (availableCredit) {
-      return availableCredit
+    return availableCredit;
   } else {
-      return null;
+    return null;
   }
 }
 

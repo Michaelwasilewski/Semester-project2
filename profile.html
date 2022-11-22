@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="/js/getProfiles.js" defer></script>
+    <script type="module" src="/main.js" defer></script>
   </head>
   <body>
     <body class="bg-gray-800">
@@ -58,7 +58,10 @@
         </nav>
       </header>
       <main class="bg-gray-800">
-        <div class="w-full bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+        <div
+          id="profile-info"
+          class="w-full bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700"
+        >
           <div class="flex justify-end px-4 pt-4"></div>
           <div class="flex flex-col items-center pb-10">
             <h5 class="mb-1 text-xl font-medium text-orange-900 dark:text-orange-300">Username</h5>
@@ -85,6 +88,10 @@
             </div>
           </div>
         </div>
+        <div
+          id="profile-container"
+          class="w-full bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700"
+        ></div>
       </main>
     </body>
   </body>
