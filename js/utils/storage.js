@@ -1,5 +1,7 @@
 const tokenKey = 'token';
 const userKey = 'user';
+const creditKey = "credits";
+
 
 function saveToken(token) {
   console.log('token: ', token);
@@ -29,6 +31,17 @@ function getUserName() {
     return null;
   }
 }
+function saveCredit(credits) {
+  saveToStorage(creditKey, credits);
+}
+function getCreditAmount() {
+  const availableCredit = getFromStorage(creditKey);
+  if (availableCredit) {
+      return availableCredit
+  } else {
+      return null;
+  }
+}
 
 // function which save data to the local storage
 function saveToStorage(key, value) {
@@ -49,4 +62,4 @@ function clearStorage() {
   localStorage.clear();
 }
 
-export { getToken, saveToken, saveUser, getUserName, clearStorage };
+export { getToken, saveToken, saveUser, getUserName, clearStorage, saveCredit, getCreditAmount };

@@ -1,6 +1,6 @@
 import { USER_LOGIN_URL } from './settings/api';
 import { validateEmail } from './utils/validation';
-import { saveUser, saveToken } from './utils/storage';
+import { saveUser, saveToken, saveCredit, getCreditAmount} from './utils/storage';
 const logInForm = document.querySelector('#login-form');
 console.log(logInForm);
 const email = document.querySelector('#email-address');
@@ -68,7 +68,9 @@ if (logInForm) {
           const userToSave = {
             name: data.name,
             email: data.email,
+            credits: data.credits,
           };
+          saveCredit(data.credits);
           saveUser(userToSave);
           location.href = '/home.html';
         } else {
