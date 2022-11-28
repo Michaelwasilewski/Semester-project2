@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script type="module" src="/main.js" defer></script>
+    <script type="module" src="/js/createBid.js" defer></script>
   </head>
   <body class="bg-gray-800">
     <header>
@@ -35,7 +36,7 @@
               </li>
               <li>
                 <a
-                  href="./user-bids.html"
+                  href="./profile.html"
                   class="block py-2 pr-4 pl-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:hover:bg-gray-700 md:dark:hover:bg-transparent text-orange-200"
                   >My bids</a
                 >
@@ -53,5 +54,80 @@
         </div>
       </nav>
     </header>
+    <main class="flex-1">
+      <div class="container flex flex-wrap justify-between items-center mx-auto">
+        <section class="m-auto w-80 bg-gray-800 text-white my-8 py-8 px-8 rounded-lg">
+          <h1 class="text-2xl font-semibold text-orange-400">Create Post</h1>
+          <form id="create-listing" class="mt-8 space-y-6" action="#" method="POST">
+            <input type="hidden" name="remember" value="true" />
+            <div id="form-inputs" class="-space-y-px rounded-md shadow-sm">
+              <div>
+                <label for="listing-title" class="block py-2 text-orange-200">Title</label>
+                <input
+                  id="listing-title"
+                  name="post-title"
+                  type="text"
+                  required
+                  class="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                  placeholder="Title of listing (Required)"
+                />
+              </div>
+              <div>
+                <label for="tags" class="block py-2 text-orange-200">Tags (Optional)</label>
+                <input
+                  id="tags"
+                  name="tags"
+                  type="text"
+                  class="relative block w-full appearance-none rounded-none rounded-b-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                  placeholder="Tags"
+                />
+              </div>
+              <div>
+                <label for="listing-description" class="block py-2 text-orange-200">Description (Optional)</label>
+                <textarea
+                  id="listing-description"
+                  rows="6"
+                  required
+                  class="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                  placeholder="Description of the listing"
+                ></textarea>
+              </div>
+              <div>
+                <label for="listing-img" class="block py-2 text-orange-300">Image URL (Optional)</label>
+                <input
+                  id="listing-img"
+                  class="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                  placeholder="Add an image"
+                />
+                <small class="block py-2 text-xs text-orange-200">Image must be live and publicly accessible URL</small>
+              </div>
+              <div>
+                <label for="ends-at" class="block py-2 text-orange-200">Listing ends at</label>
+                <input
+                  id="ends-at"
+                  name="ends-at"
+                  type="datetime-local"
+                  class="relative block w-full appearance-none rounded-none rounded-b-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                  placeholder="2020-01-01T00:00:00.000Z"
+                />
+                <small class="block py-2 text-xs text-orange-200"
+                  >2020-01-01T00:00:00.000Z Required - Instance of new Date()</small
+                >
+              </div>
+            </div>
+            <div>
+              <button
+                id="create-listing-btn"
+                type="submit"
+                class="group relative flex w-full justify-center rounded-md border border-transparent bg-orange-400 py-2 px-4 text-sm font-medium text-gray-600 hover:bg-orange-300 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-1"
+              >
+                Create Post
+              </button>
+            </div>
+            <div id="general-error" class="text-2xl py-3.5 text-red-500 text-center hidden"></div>
+          </form>
+        </section>
+      </div>
+    </main>
   </body>
 </html>

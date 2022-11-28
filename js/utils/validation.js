@@ -18,5 +18,37 @@ function validatePassword(password, confirmPassword) {
     return true;
   }
 }
+/**
+ * Checking whether Image URL is an Image or not.
+ * Inspiration and regex from https://bobbyhadz.com/blog/javascript-check-if-url-is-image
+ * @param url Image URL
+ * @return {boolean}
+ */
+function isImage(url) {
+  const imgRegex = /\.(jpg|jpeg|png|webp|avif|gif|svg)$/;
+  if (typeof url === 'object') {
+    return imgRegex.test(url.value);
+  } else {
+    return imgRegex.test(url);
+  }
+}
+// const checkImg = (url) => {
+//   const urlPattern = /(?:https?):\/\/(\w+:?\w*)?(\S+)(:\d+)?(\/|\/([\w#!:.?+=&%!\-\/]))?/;
+//   if (typeof url === "object") {
+//       return urlPattern.test(url.value)
+//   } else {
+//       return urlPattern.test(url);
+//   }
+// };
+/**
+ * General Error message for API Calls.
+ * @param elem Hidden element
+ * @param {string} [message] General Error message
+ */
+function showErrorMsg(elem, message = 'Something went wrong.. please try again later') {
+  elem.classList.remove('hidden');
+  elem.innerHTML = message;
+  elem.scrollIntoView({ block: 'center' });
+}
 
-export { validateEmail, validatePassword };
+export { validateEmail, validatePassword, isImage, showErrorMsg };

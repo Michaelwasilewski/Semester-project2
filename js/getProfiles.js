@@ -1,8 +1,6 @@
 import { getToken } from './utils/storage';
 import { GET_PROFILE } from './settings/api';
 
-const profileContainer = document.querySelector('#profile-container');
-console.log(profileContainer);
 const profileInfo = document.querySelector('#profile-info');
 console.log(profileInfo);
 const accessToken = getToken();
@@ -21,10 +19,6 @@ async function getProfile() {
   const email = profile.email;
   const avatar = profile.avatar;
   const credits = profile.credits;
-  const listings = profile.listings;
-  const title = profile.listings.title;
-  const description = profile.listings.description;
-  const media = profile.listings.media;
 
   profileInfo.innerHTML = `
     <div class="flex justify-end px-4 pt-4"></div>

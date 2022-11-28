@@ -7,8 +7,9 @@
     <title>Document</title>
     <script type="module" src="/js/getProfiles.js" defer></script>
     <script type="module" src="/main.js" defer></script>
+    <script type="module" src="/js/getProfileListings.js" defer></script>
   </head>
-  <body>
+  <body class="flex-1">
     <body class="bg-gray-800">
       <header>
         <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900">
@@ -57,7 +58,7 @@
           </div>
         </nav>
       </header>
-      <main class="bg-gray-800">
+      <main class="bg-gray-800 flex-1">
         <div
           id="profile-info"
           class="w-full bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700"
@@ -88,10 +89,11 @@
             </div>
           </div>
         </div>
-        <div
-          id="profile-container"
-          class="w-full bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700"
-        ></div>
+        <div class="flex justify-center">
+          <h1 class="text-5xl font-extrabold dark:text-orange-300">User's listings</h1>
+        </div>
+        <div id="profile-container" class="container flex flex-wrap justify-between items-center mx-auto gap-8"></div>
+        <div id="general-error"></div>
       </main>
     </body>
   </body>
