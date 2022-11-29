@@ -9,7 +9,7 @@ export default {
         logIn: resolve(__dirname, 'signin.html'),
         createPost: resolve(__dirname, 'create-bid.html'),
         singlePost: resolve(__dirname, 'single-listing.html'),
-        editPost: resolve(__dirname, 'edit-bid.html'),
+        profile: resolve(__dirname, 'profile.html'),
       },
     },
   },

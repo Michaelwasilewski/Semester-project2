@@ -56,7 +56,7 @@
     </header>
     <main class="flex-1">
       <div class="container flex flex-wrap justify-between items-center mx-auto">
-        <section class="m-auto w-80 bg-gray-800 text-white my-8 py-8 px-8 rounded-lg">
+        <section class="m-auto w-100 bg-gray-800 text-white my-8 py-8 px-8 rounded-lg">
           <h1 class="text-2xl font-semibold text-orange-400">Create Post</h1>
           <form id="create-listing" class="mt-8 space-y-6" action="#" method="POST">
             <input type="hidden" name="remember" value="true" />
@@ -69,17 +69,7 @@
                   type="text"
                   required
                   class="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
-                  placeholder="Title of listing (Required)"
-                />
-              </div>
-              <div>
-                <label for="tags" class="block py-2 text-orange-200">Tags (Optional)</label>
-                <input
-                  id="tags"
-                  name="tags"
-                  type="text"
-                  class="relative block w-full appearance-none rounded-none rounded-b-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
-                  placeholder="Tags"
+                  placeholder="Enter a title (Required)"
                 />
               </div>
               <div>
@@ -92,12 +82,75 @@
                   placeholder="Description of the listing"
                 ></textarea>
               </div>
+              <h3 class="underline text-orange-400 text-center">Add tags for your listing</h3>
+              <div>
+                <label for="tags" class="block py-2 text-orange-200">List Tag One (Optional)</label>
+                <input
+                  id="listingTagOne"
+                  name="listingTagOne"
+                  type="text"
+                  class="relative block w-full appearance-none rounded-none rounded-b-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                  placeholder="Tags"
+                />
+              </div>
+              <div>
+                <label for="tags" class="block py-2 text-orange-200">List Tag Two (Optional)</label>
+                <input
+                  id="listingTagTwo"
+                  name="listingTagTwo"
+                  type="text"
+                  class="relative block w-full appearance-none rounded-none rounded-b-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                  placeholder="Tags"
+                />
+              </div>
+              <div>
+                <label for="tags" class="block py-2 text-orange-200">List Tag Three (Optional)</label>
+                <input
+                  id="listingTagThree"
+                  name="listingTagThree"
+                  type="text"
+                  class="relative block w-full appearance-none rounded-none rounded-b-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                  placeholder="Tags"
+                />
+              </div>
+              <h3 class="underline text-orange-400 text-center">Add images URL for you listing</h3>
               <div>
                 <label for="listing-img" class="block py-2 text-orange-300">Image URL (Optional)</label>
                 <input
-                  id="listing-img"
+                  id="listing-img-one"
+                  type="text"
                   class="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
-                  placeholder="Add an image"
+                  placeholder="Image 1..."
+                />
+                <small class="block py-2 text-xs text-orange-200">Image must be live and publicly accessible URL</small>
+              </div>
+              <div>
+                <label for="listing-img" class="block py-2 text-orange-300">Image URL (Optional)</label>
+                <input
+                  id="listing-img-two"
+                  type="text"
+                  class="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                  placeholder="Image 2..."
+                />
+                <small class="block py-2 text-xs text-orange-200">Image must be live and publicly accessible URL</small>
+              </div>
+              <div>
+                <label for="listing-img" class="block py-2 text-orange-300">Image URL (Optional)</label>
+                <input
+                  id="listing-img-three"
+                  type="text"
+                  class="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                  placeholder="Image 3..."
+                />
+                <small class="block py-2 text-xs text-orange-200">Image must be live and publicly accessible URL</small>
+              </div>
+              <div>
+                <label for="listing-img" class="block py-2 text-orange-300">Image URL (Optional)</label>
+                <input
+                  id="listing-img-four"
+                  type="text"
+                  class="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                  placeholder="Image 4..."
                 />
                 <small class="block py-2 text-xs text-orange-200">Image must be live and publicly accessible URL</small>
               </div>

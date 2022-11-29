@@ -88,9 +88,9 @@ const accessToken = getToken();
             <button
                 data-id=""
                 type="button"
-                class="delete-post-btn inline-flex items-center rounded-md border border-transparent bg-red-100 px-3 py-2 text-sm font-medium leading-4 text-red-700 hover:bg-red-300 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2">
+                class="delete-post-btn inline-flex items-center rounded-md border dark:bg-orange-200 px-3 py-2 text-sm font-medium leading-4 text-red-700 hover:bg-red-300 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2">
                     Delete
-                </button>
+            </button>
                 
                 <a href="/edit-post.html?post_id=" class="inline-flex items-center rounded-md border border-transparent bg-purple-100 px-3 py-2 text-sm font-medium leading-4 text-purple-700 hover:bg-purple-300 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2">
                     Edit

@@ -59,7 +59,6 @@
             </ul>
           </div>
         </div>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, necessitatibus.
       </nav>
     </header>
     <main class="flex-1">
@@ -125,6 +124,28 @@
             id="listing-container"
             class="w-full bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700"
           ></div>
+          <form
+            id="bidding-form"
+            class="flex flex-col gap-y-2 p-8 m-8 mx-auto w-96 text-left bg-gray-800 rounded-md border shadow"
+          >
+            <h2 class="mb-4 text-2xl font-semibold text-orange-300 underline">Bid on this listing</h2>
+            <div class="flex flex-col gap-y-1">
+              <label for="listing-bid-input" class="text-orange-300">Listing Bid Amount </label>
+              <input
+                id="listing-bid-input"
+                class="p-2 rounded-md"
+                name="listingBidInput"
+                type="number"
+                placeholder="Enter a bid amount"
+              />
+            </div>
+            <button
+              class="justify-center capitalize inline-flex items-center rounded-md border border-transparent bg-orange-500 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-orange-600 focus:outline-none"
+              type="submit"
+            >
+              Bid
+            </button>
+          </form>
           <div id="general-error" class="text-2xl py-3.5 text-red-500 text-center hidden"></div>
         </section>
       </div>

@@ -24,9 +24,9 @@ async function getProfile() {
     <div class="flex justify-end px-4 pt-4"></div>
           <div class="flex flex-col items-center pb-10">
             <h1 class="mb-1 text-xl font-medium  dark:text-orange-300">Username: ${name}</h1>
-            <div class="overflow-hidden relative w-10 h-10 bg-gray-100 rounded-full dark:bg-gray-600">
+            <div class="overflow-hidden relative w-24 h-24 bg-gray-100 rounded-full dark:bg-gray-600">
               <img
-                class="w-10 h-10 rounded-full"
+                class="relative h-24 w-24 rounded-full"
                 src="${avatar}"
                 alt="Profile picture"
               />
@@ -38,13 +38,8 @@ async function getProfile() {
             <div class="flex mt-4 space-x-3 md:mt-6">
               <a
                 href="#"
-                class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-gray-600 bg-orange-300 rounded-lg hover:bg-orange-200 focus:ring-4 focus:outline-none focus:ring-orange-400 dark:bg-orange-300 dark:hover:bg-orange-200 dark:focus:ring-orange-300"
-                >Add friend</a
-              >
-              <a
-                href="#"
                 class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-gray-600 bg-orange-300 rounded-lg hover:bg-orange-200 focus:ring-4 focus:outline-none focus:ring-orange-400 dark:bg-orange-500 dark:hover:bg-orange-400 dark:focus:ring-orange-400"
-                >Message</a
+                >Edit avatar</a
               >
             </div>
           </div>
