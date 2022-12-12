@@ -8,6 +8,7 @@
     <script type="module" src="/main.js" defer></script>
     <script type="module" src="/js/listingsById.js" defer></script>
   </head>
+
   <body class="bg-gray-800">
     <header>
       <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900">
@@ -124,13 +125,11 @@
             id="listing-container"
             class="w-full bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700"
           ></div>
-          <form
-            id="bidding-form"
-            class="flex flex-col gap-y-2 p-8 m-8 mx-auto w-96 text-left bg-gray-800 rounded-md border shadow"
-          >
+
+          <form id="bidding-form" class="flex flex-col gap-y-2 p-8 m-8 mx-auto text-left bg-gray-800 rounded-md shadow">
             <h2 class="mb-4 text-2xl font-semibold text-orange-300 underline">Bid on this listing</h2>
             <div class="flex flex-col gap-y-1">
-              <label for="listing-bid-input" class="text-orange-300">Listing Bid Amount </label>
+              <label for="listing-bid-input" class="text-orange-300">Enter amount of credits you want to bid. </label>
               <input
                 id="listing-bid-input"
                 class="p-2 rounded-md"
@@ -139,14 +138,13 @@
                 placeholder="Enter a bid amount"
               />
             </div>
-            <button
-              class="justify-center capitalize inline-flex items-center rounded-md border border-transparent bg-orange-500 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-orange-600 focus:outline-none"
-              type="submit"
-            >
-              Bid
-            </button>
+            <div class="mt-16 max-w-[90%] lg:max-w-6xl mx-auto text-white">
+              <p class="border-b border-b-stone-600 p-2 text-xl">Bidding history:</p>
+              <p class="flex justify-center text-lg mt-6" id="no-bids">No biddings on this item yet</p>
+              <div class="w-full md:w-3/3 mx-auto mt-6 p-8" id="biddingData"></div>
+            </div>
+            <div id="general-error" class="text-2xl py-3.5 text-red-500 text-center hidden"></div>
           </form>
-          <div id="general-error" class="text-2xl py-3.5 text-red-500 text-center hidden"></div>
         </section>
       </div>
     </main>

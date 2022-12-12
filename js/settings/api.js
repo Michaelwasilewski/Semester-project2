@@ -13,6 +13,8 @@ const GET_LISTINGS_BY_ID_URL = API_BASE_URL + `api/v1/auction/listings`;
 // PROFILE
 const GET_PROFILE = API_BASE_URL + `api/v1/auction/profiles/${userName}?_listings=true`;
 const GET_PROFILE_LISTINGS = API_BASE_URL + `api/v1/auction/profiles/${userName}/listings`;
+const CHANGE_AVATAR_URL = API_BASE_URL + `api/v1/auction/profiles/${userName}/media`;
+const PROFILE_AVATAR_URL = API_BASE_URL + `api/v1/auction/profiles/${userName}`;
 export {
   API_BASE_URL,
   USER_LOGIN_URL,
@@ -21,5 +23,7 @@ export {
   GET_LISTINGS_BY_ID_URL,
   GET_PROFILE,
   GET_PROFILE_LISTINGS,
+  CHANGE_AVATAR_URL,
+  PROFILE_AVATAR_URL,
 };
 // https://api.noroff.dev/api/v1/social/auth/register

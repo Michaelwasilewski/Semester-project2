@@ -41,7 +41,9 @@ createListingForm.addEventListener('submit', function (event) {
   console.log(listingImgOne.value.trim());
   console.log(listingImgTwo.value.trim());
   console.log(listingImgThree.value.trim());
-
+  if (!accessToken) {
+    location.href = '/index.html';
+  }
   console.log(endsAt.value);
 
   const listingTags = [tagOne.value, tagTwo.value, tagThree.value];

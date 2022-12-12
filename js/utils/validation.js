@@ -3,6 +3,14 @@ function validateEmail(email) {
   return email.match(regEx) ? true : false;
 }
 
+function isValidUrl(string) {
+  try {
+    new URL(string);
+    return true;
+  } catch (err) {
+    return false;
+  }
+}
 function validatePassword(password, confirmPassword) {
   console.log(password);
   console.log(confirmPassword);
@@ -51,4 +59,4 @@ function showErrorMsg(elem, message = 'Something went wrong.. please try again l
   elem.scrollIntoView({ block: 'center' });
 }
 
-export { validateEmail, validatePassword, isImage, showErrorMsg };
+export { validateEmail, validatePassword, isImage, showErrorMsg, isValidUrl };

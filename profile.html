@@ -57,6 +57,28 @@
       </nav>
     </header>
     <main class="bg-gray-800 flex-1">
+      <form
+        id="changeAvatarForm"
+        class="absolute flex flex-col w-[90%] lg:w-1/2 lg:max-w-6xl h-fit p-8 bg-gray-800 shadow-md shadow-black top-[10rem] rounded-lg left-[50%] translate-x-[-50%] z-40 hidden"
+      >
+        <button type="button" id="stopEditBtn" class="absolute top-2 right-4 text-white font-bold text-xl">X</button>
+        <div class="flex flex-col w-5/6 mx-auto">
+          <label for="avatar" class="pb-4 text-orange-300 text-xl">Change Your Avatar</label>
+          <input
+            type="text"
+            name="avatarInput"
+            id="avatarInput"
+            accept="image/png, image/jpeg"
+            placeholder="Paste url here"
+            class="text-black p-1 rounded-lg"
+          />
+          <p id="avatarErrorMessage" class="text-red-600 hidden">Must be a valid URL</p>
+          <p id="generalErrorMessage" class="text-red-600"></p>
+        </div>
+        <button type="submit" class="mt-8 py-2 w-1/2 xl:w-1/5 mx-auto bg-orange-400 rounded-lg text-gray-800">
+          Update Avatar
+        </button>
+      </form>
       <div
         id="profile-info"
         class="w-full bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700"
@@ -65,7 +87,7 @@
         <h1 class="text-5xl font-extrabold dark:text-orange-300">User's listings</h1>
       </div>
       <div id="profile-container" class="container flex flex-wrap justify-between items-center mx-auto gap-8"></div>
-      <div id="general-error"></div>
+      <div id="generalErrorMessage"></div>
     </main>
   </body>
 </html>

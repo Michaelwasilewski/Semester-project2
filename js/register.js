@@ -1,5 +1,6 @@
 import { validatePassword, validateEmail } from './utils/validation';
 import { USER_SIGNUP_URL } from './settings/api';
+import { getToken } from './utils/storage';
 const loginForm = document.querySelector('#form');
 console.log(loginForm);
 const formInputs = document.querySelector('#form-inputs');
@@ -21,7 +22,11 @@ const confirmPasswordErrorNotMatching = document.querySelector('#ConfirmPassword
 const avatar = document.querySelector('#avatar');
 console.log(avatar);
 const avatarError = 'Avatar must have image filename ending (.jpg .gif .png etc)';
+const accessToken = getToken();
 const generalErrorMsg = document.querySelector('#error-message');
+if (accessToken) {
+  location.href = '/home.html';
+}
 
 loginForm.addEventListener('submit', function (event) {
   event.preventDefault();

@@ -22,6 +22,34 @@ function saveUser(user) {
   saveToStorage(userKey, user);
 }
 
+const accessToken = getToken();
+
+function updateLocalStorrage(url) {
+  async function getUserData() {
+    const response = await fetch(url, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${accessToken}`,
+      },
+    });
+    if (response.ok) {
+      const data = await response.json();
+      const userToSave = {
+        name: data.name,
+        email: data.email,
+        avatar: data.avatar,
+        credits: data.credits,
+      };
+      saveUser(userToSave);
+      location.reload();
+    } else {
+      console.log('There was an error');
+    }
+  }
+  getUserData();
+}
+
 function getUserName() {
   const user = getFromStorage(userKey);
   if (userKey) {
@@ -37,6 +65,15 @@ function getCreditAmount() {
   const availableCredit = getFromStorage(creditKey);
   if (availableCredit) {
     return availableCredit;
+  } else {
+    return null;
+  }
+}
+
+function getUserAvatar() {
+  const user = getFromStorage(userKey);
+  if (userKey) {
+    return user.avatar;
   } else {
     return null;
   }
@@ -61,4 +98,14 @@ function clearStorage() {
   localStorage.clear();
 }
 
-export { getToken, saveToken, saveUser, getUserName, clearStorage, saveCredit, getCreditAmount };
+export {
+  getToken,
+  saveToken,
+  saveUser,
+  updateLocalStorrage,
+  getUserName,
+  clearStorage,
+  saveCredit,
+  getCreditAmount,
+  getUserAvatar,
+};
