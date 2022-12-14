@@ -19,7 +19,7 @@ This will start a local development server that you can access at `http://localh
 
 To use the auction website, follow these steps:
 
-1. Go to the website: `http://localhost:3000/`
+1. Go to the website: `https://rad-squirrel-681864.netlify.app`
 2. Sign up for an account using @noroff.no or @stud.noroff.no email.
 3. Add an item to be bid on or bid on an existing item
 
