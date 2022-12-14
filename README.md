@@ -9,7 +9,7 @@ The project is built using HTML, Tailwind and Javascript.
 
 To get started with this project, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/YOUR-USERNAME/Semester-project2.git`
+1. Clone the repository: `git clone https://github.com/Michaelwasilewski/Semester-project2.git`
 2. Install the dependencies: `npm install`
 3. Start the development server: `npm run dev`
 
