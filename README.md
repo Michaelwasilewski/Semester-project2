@@ -14,6 +14,7 @@ To get started with this project, follow these steps:
 3. Start the development server: `npm run dev`
 
 This will start a local development server that you can access at `http://localhost:3000/`.
+To run the project locally, you'll need to have VITE installed on your machine. 
 
 ## Usage
 
