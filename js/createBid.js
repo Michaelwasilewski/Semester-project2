@@ -1,18 +1,18 @@
 import { GET_LISTINGS_BY_ID_URL } from './settings/api';
 import { getToken } from './utils/storage';
-import { isImage, showErrorMsg } from './utils/validation';
-import { addLoader, removeLoader } from './utils/loader';
 const createListingForm = document.querySelector('#create-listing');
 const listingTitle = document.querySelector('#listing-title');
 const tagOne = document.querySelector('#listingTagOne');
 const tagTwo = document.querySelector('#listingTagTwo');
 const tagThree = document.querySelector('#listingTagThree');
 
+
 const description = document.querySelector('#listing-description');
 
 const listingImgOne = document.querySelector('#listing-img-one');
 const listingImgTwo = document.querySelector('#listing-img-two');
 const listingImgThree = document.querySelector('#listing-img-three');
+
 
 const endsAt = document.querySelector('#ends-at');
 console.log(endsAt);
@@ -25,6 +25,7 @@ createListingForm.addEventListener('submit', function (event) {
   if (!accessToken) {
     location.href = '/index.html';
   }
+
 
   const listingTags = [tagOne.value, tagTwo.value, tagThree.value];
   const listingImages = [listingImgOne.value, listingImgTwo.value, listingImgThree.value];
@@ -52,9 +53,11 @@ createListingForm.addEventListener('submit', function (event) {
     } else {
       const err = await response.json();
       console.log(err);
+
     }
     createListingForm.reset();
   }
 
   createListing();
 });
+
