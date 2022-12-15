@@ -47,7 +47,7 @@ const displayPosts = (data) => {
         const listingEndsAt = post.endsAt;
         const listingTags = post.tags;
         return `
-      <div class=" bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 mt-10">
+      <div class="  border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 mt-10">
           <div class="w-full h-52 ">
             <img class="rounded-t-lg h-full w-full object-cover" src="${listingMedia}" alt="" />
           </div>
