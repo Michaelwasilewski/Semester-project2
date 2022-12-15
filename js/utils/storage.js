@@ -17,7 +17,6 @@ function getToken() {
   }
 }
 
-
 function saveUser(user) {
   saveToStorage(userKey, user);
 }

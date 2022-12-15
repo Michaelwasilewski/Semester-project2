@@ -47,11 +47,8 @@ async function getListingsById() {
     return listOfTags;
   }
   const endsAt = new Date(data.endsAt);
-  console.log(endsAt);
   const countDown = new Date(`${endsAt}`).getTime();
-  console.log(countDown);
   let now = new Date().getTime();
-  console.log(now);
   let timeleft = countDown - now;
   let days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
   let hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -60,7 +57,6 @@ async function getListingsById() {
   const hoursSplit = splitIntoArray(hours);
   const minutesSplit = splitIntoArray(minutes);
   let listingBids = data.bids;
-  console.log(listingBids);
   listingBids.sort(function (x, y) {
     return y.amount - x.amount;
   });

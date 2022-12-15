@@ -40,14 +40,7 @@ function isImage(url) {
     return imgRegex.test(url);
   }
 }
-// const checkImg = (url) => {
-//   const urlPattern = /(?:https?):\/\/(\w+:?\w*)?(\S+)(:\d+)?(\/|\/([\w#!:.?+=&%!\-\/]))?/;
-//   if (typeof url === "object") {
-//       return urlPattern.test(url.value)
-//   } else {
-//       return urlPattern.test(url);
-//   }
-// };
+
 /**
  * General Error message for API Calls.
  * @param elem Hidden element
