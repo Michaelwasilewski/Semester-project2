@@ -53,11 +53,11 @@ const displayPosts = (data) => {
           </div>
           <div class="p-4">
             <a href="#">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-orange-300">${listingTitle}</h5>
+              <h5 class="mb-2 text-2xl font-bold tracking-tight  text-orange-300">${listingTitle}</h5>
             </a>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">${listingDescription}</p>
+            <p class="mb-3 font-normal  text-gray-400">${listingDescription}</p>
             <span
-              class="bg-yellow-100 mb-3 text-yellow-800 text-xs font-xs mr-2 px-2.5 py-0.5 rounded dark:bg-orange-300 dark:text-yellow-900">${listingTags}</span>
+              class=" mb-3 text-yellow-800 text-xs font-xs mr-2 px-2.5 py-0.5 rounded bg-orange-300 ">${listingTags}</span>
             <a href="/single-listing.html?listings_id=${post.id}"
               class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-gray bg-orange-300 rounded-lg hover:bg-orange-200 focus:outline-none focus:ring-orange-300 dark:bg-orange-400 dark:hover:bg-orange-200 dark:focus:ring-orange-300">
               View Listing
