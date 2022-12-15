@@ -2,9 +2,7 @@ import { getToken } from './utils/storage';
 import { GET_PROFILE_LISTINGS, GET_LISTINGS_BY_ID_URL } from './settings/api';
 
 const listingContainer = document.querySelector('#profile-container');
-console.log(listingContainer);
 const generalError = document.querySelector('#general-error');
-console.log(generalError);
 const accessToken = getToken();
 
 (async function getAllListings() {
@@ -18,15 +16,11 @@ const accessToken = getToken();
   console.log('Get all posts response: ', response);
   if (response.ok) {
     const listings = await response.json();
-    console.log(listings);
-    console.log('Get listings succeeded');
-    console.log('posts: ', listings);
     if (!listings.length) {
       generalError.innerHTML = 'Sorry, there are currently no listings';
     } else {
       const listOfHtmlPosts = listings
         .map((post) => {
-          console.log('listings ', post);
           const listingTitle = post.title;
           const listingDescription = post.description;
           const listingMedia = post.media[0];
@@ -62,7 +56,6 @@ const accessToken = getToken();
     throw new Error(message);
   }
 })().catch((err) => {
-  console.log('Get listing failed ! ');
   console.log(err);
   generalError.innerHTML = err;
 });

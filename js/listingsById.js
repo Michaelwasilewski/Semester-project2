@@ -193,15 +193,12 @@ biddingForm.addEventListener('submit', function (event) {
       },
       body: JSON.stringify(amountToBid),
     });
-    console.log('bid on list response: ', response);
     if (response.ok) {
       const data = await response.json();
       console.log(data);
-      console.log('Bid on a list SUCCEEDED!!  🥳 🤗🤗');
     } else {
       const err = await response.json();
       console.log(err);
-      console.log('CREATE LIST FAILED');
     }
     biddingForm.reset();
   }

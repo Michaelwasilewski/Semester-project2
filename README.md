@@ -1,6 +1,8 @@
 # Semester-project2
+
 # AuctionCloud
-## Description 
+
+## Description
 
 This is an auction website where users can add items to be bid on and bid on items put up for auction by other users. Non-registered users can search through the listings, but only registered users can make bids on listings.
 The project is built using HTML, Tailwind and Javascript.
@@ -14,7 +16,7 @@ To get started with this project, follow these steps:
 3. Start the development server: `npm run dev`
 
 This will start a local development server that you can access at `http://localhost:3000/`.
-To run the project locally, you'll need to have VITE installed on your machine. 
+To run the project locally, you'll need to have VITE installed on your machine.
 
 ## Usage
 

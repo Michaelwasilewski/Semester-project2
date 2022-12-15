@@ -2,17 +2,16 @@ import { USER_LOGIN_URL } from './settings/api';
 import { validateEmail } from './utils/validation';
 import { saveUser, saveToken, saveCredit, getCreditAmount } from './utils/storage';
 const logInForm = document.querySelector('#login-form');
-console.log(logInForm);
+
 const email = document.querySelector('#email-address');
-console.log(email);
+
 const emailError = document.querySelector('#emailError');
-console.log(emailError);
 const emailErrorNotValid = document.querySelector('#emailErrorValid');
-console.log(emailErrorNotValid);
+
 const password = document.querySelector('#password');
-console.log(password);
+
 const passwordError = document.querySelector('#passwordError');
-console.log(passwordError);
+
 const errorMessage = document.querySelector('#general-error');
 
 if (logInForm) {
