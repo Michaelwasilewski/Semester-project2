@@ -40,7 +40,6 @@ const displayPosts = (data) => {
   } else {
     const listOfPosts = data
       .map((post) => {
-        console.log('listings ', post);
         const listingTitle = post.title;
         const listingDescription = post.description;
         const listingMedia = post.media[0];

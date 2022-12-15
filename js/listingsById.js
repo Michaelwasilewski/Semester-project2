@@ -178,8 +178,6 @@ const biddingForm = document.querySelector('#bidding-form');
 
 biddingForm.addEventListener('submit', function (event) {
   event.preventDefault();
-  console.log('listingBidInput', listingBidInput.value);
-
   const amountToBid = {
     amount: parseInt(listingBidInput.value),
   };
