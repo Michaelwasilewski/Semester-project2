@@ -31,13 +31,13 @@ const accessToken = getToken();
           <div>
             <img class="rounded-t-lg h-full w-full object-cover" src="${listingMedia}" alt="" />
           </div>
-          <div class="p-4">
+          <div class="p-4 bg-gray-800">
             <a href="#">
               <h5 class="mb-2 text-2xl font-bold tracking-tight text-orange-300">${listingTitle}</h5>
             </a>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">${listingDescription}</p>
+            <p class="mb-3 font-normal text-orange-300">${listingDescription}</p>
             <span
-              class=" mb-3 text-yellow-800 text-xs font-xs mr-2 px-2.5 py-0.5 rounded dark:bg-orange-300">Tags: ${listingTags}</span>
+              class=" mb-3 text-yellow-800 text-xs font-xs mr-2 px-2.5 py-0.5 rounded bg-orange-300">Tags: ${listingTags}</span>
           </div>
           <div class="flex gap-4 justify-center">
       </div>
