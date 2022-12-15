@@ -62,18 +62,18 @@ async function getProfile() {
   profileInfo.innerHTML = `
     <div class="flex justify-end px-4 pt-4"></div>
           <div class="flex flex-col items-center pb-10">
-            <h1 class="mb-1 text-xl font-medium  dark:text-orange-300">Username: ${name}</h1>
-            <div class="overflow-hidden relative w-24 h-24 bg-gray-100 rounded-full dark:bg-gray-600">
+            <h1 class="mb-1 text-xl font-medium  text-orange-300">Username: ${name}</h1>
+            <div class="overflow-hidden relative w-24 h-24  rounded-full bg-gray-600">
               <img
                 class="relative h-24 w-24 rounded-full"
                 src="${avatar}"
                 alt="Profile picture"
               />
             </div>
-            <span class="text-sm text-gray-500 dark:text-orange-200">Auction seller</span>
-            <span class="text-sm text-gray-500 dark:text-orange-200">Credits: ${credits} </span>
-            <span class="text-sm text-gray-500 dark:text-orange-200">Email: ${email} </span>
-            <button type="button" id="changeAvatarBtn" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-gray bg-orange-300 rounded-lg hover:bg-orange-200 focus:outline-none focus:ring-orange-300 dark:bg-orange-400 dark:hover:bg-orange-200 dark:focus:ring-orange-300">Change Avatar</button>
+            <span class="text-sm text-orange-200">Auction seller</span>
+            <span class="text-sm text-orange-200">Credits: ${credits} </span>
+            <span class="text-sm text-orange-200">Email: ${email} </span>
+            <button type="button" id="changeAvatarBtn" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-gray bg-orange-300 rounded-lg hover:bg-orange-200 focus:outline-none focus:ring-orange-300 dark:hover:bg-orange-200 dark:focus:ring-orange-300">Change Avatar</button>
           </div>
         </div>
     `;
