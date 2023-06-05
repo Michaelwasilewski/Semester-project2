@@ -1,4 +1,5 @@
 # Semester-project2
+![auction-cloud](https://github.com/Michaelwasilewski/Semester-project2/assets/89254319/b2f7f248-5093-40e5-97c2-0b5b8947bc69)
 
 # AuctionCloud
 
